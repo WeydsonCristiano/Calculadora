@@ -1,0 +1,47 @@
+<html>
+  <script>
+    let primeiroNumero = parseInt(prompt("Primeiro número"));
+    console.log(`Primeiro número: ${primeiroNumero} `);
+
+    let sinal = prompt("Sinal:");
+    while (
+      sinal != "*" &&
+      sinal != "+" &&
+      sinal != "-" &&
+      sinal != "/" &&
+      sinal != "r"
+    ) {
+      sinal = prompt("Sinal sinal errado, tenta de novo.");
+    }
+    console.log(`Sinal: ${sinal} `);
+
+    let segundoNumero = parseInt(prompt(`Segundo número:`));
+    console.log(`Segundo número: ${segundoNumero} `);
+
+    let resultadoFinal = 0;
+
+    if (sinal == "-") {
+      resultadoFinal = primeiroNumero - segundoNumero;
+    } else if (sinal == "+") {
+      resultadoFinal = primeiroNumero + segundoNumero;
+    } else if (sinal == "/") {
+      resultadoFinal = primeiroNumero / segundoNumero;
+    } else if (sinal == "*") {
+      resultadoFinal = primeiroNumero * segundoNumero;
+    } else if (sinal == "r") {
+      resultadoFinal = Math.sqrt(primeiroNumero);
+    }
+    document.write(`
+Primeiro número: ${primeiroNumero} 
+<br/>
+Sinal: ${sinal}
+<br/>
+Segundo número: ${segundoNumero}
+<br/>
+Resultado: ${resultadoFinal} `);
+    console.log(`
+    ------------------------------
+    Resultado Final: ${resultadoFinal} `);
+    alert(`Resultado Final: ${resultadoFinal} `);
+  </script>
+</html>
