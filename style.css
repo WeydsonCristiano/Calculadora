@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     color: red;
-    font-size: xx-large;
+    font-size:x-large;
     text-align: center;
   }
   
@@ -17,8 +17,8 @@ header {
   }
   
   .input {
-    margin-bottom: 50px;
-    font-size: xx-large;
+    margin-bottom: 30px;
+    font-size:x-large;
     
   }
   
@@ -27,11 +27,11 @@ header {
   }
   
   .button {
-    padding: 40px;
-    margin-left: 80px;
+    padding: 30px;
+    margin-left: 60px;
     background-color:aquamarine;
     border: solid black 2px;
-    font-size: xx-large;
+    font-size:x-large;
   }
   
   .result {
